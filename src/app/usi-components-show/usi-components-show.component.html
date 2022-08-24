@@ -1,0 +1,5 @@
+<blue-badge-title *ngIf="component == 'usi-title'" [title]="element.nome" [color]="element.color" [icon]="element.icon"></blue-badge-title> 
+<blue-badge-status *ngIf="component == 'usi-status'" disabled="true"></blue-badge-status>
+<blue-opts *ngIf="component == 'usi-opts'" (removeFunction)="removeFunction()" (editFunction)="editFunction()" [editShow]="opts.edit" [removeShow]="opts.close"></blue-opts>
+<mat-label *ngIf="component == 'usi-label'">{{element.nome}}</mat-label>
+<usi-last-update *ngIf="component == 'usi-last-update'" [date]="element.data"></usi-last-update>

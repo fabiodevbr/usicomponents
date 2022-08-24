@@ -1,0 +1,87 @@
+
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  .header-modal {
+    color: #42569C;
+    position: relative;
+    bottom: 10px;
+    right: 20px;
+
+    .icon-main {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+    .icon-close {
+        position: relative;
+        left: 82%;
+        color: #ABB0C0;
+        font-size: 16px;
+    }
+  }
+
+  .content-primary {
+    color: #515A71;
+    padding: 20px 20px 30px 20px;
+    border: 1px solid #F2F3F7;
+    border-radius: 3px;
+    margin-top: 1.5em;
+    font-size: 11px;
+  }
+
+  .content-secondary {
+    color: #515A71;
+    padding: 20px 20px 30px 20px;
+    border: 1px solid #F2F3F7;
+    border-radius: 3px;
+    margin-top: 1.5em;
+    font-size: 11px;
+
+        .title {
+            color: #ABB0C0; margin-bottom: 20px;
+        }
+
+        .icon-selected {
+            height: 38px;
+            width: 38px;
+            margin-top: 20px;
+            border: 1px solid #ABB0C0;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .color-picker {
+            position: relative;
+            right: 7px;
+            top: 20px
+        }
+  }
+
+  .footer-buttons {
+    display: flex;
+    position: relative;
+    left: 83%;
+    top: 3em;
+
+        .close-button {
+            margin-right: 16px;
+            font-weight: 400;
+            color: #ABB0C1
+        }
+
+        .save-button {
+            background-color: #41569D;
+            color: white;
+        }
+  }

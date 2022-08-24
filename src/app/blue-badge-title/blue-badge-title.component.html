@@ -1,0 +1,7 @@
+<div [ngStyle]="{'background-color': color + '24', 'margin': '1em 0', 'padding':  '7px', 'width': '240px'}" >
+    <mat-label [ngStyle]="{'display': 'flex', 'align-items': 'center', 'color': color}" >
+        <!-- <mat-icon aria-hidden="false" aria-label="Example home icon" style="font-size: 20px" fontIcon="ads_click"></mat-icon>   -->
+        <fa-icon style="margin-right: 5px;" [icon]="['fal', icon]"></fa-icon>
+        <span>{{title}}</span>
+    </mat-label>
+</div>

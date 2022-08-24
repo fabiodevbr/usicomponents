@@ -1,0 +1,36 @@
+<div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+    <div cdkDrag  *ngFor="let item of items" >
+        <div class="example-box" [ngClass]="item.edit ? 'active' : 'inative'">
+        <div class="dragSquare">
+            <mat-icon *ngIf="!item.edit"  style="transform: translateX(-5px) translateY(15px); color: white;" aria-hidden="false" aria-label="Example home icon" fontIcon="drag_indicator"></mat-icon>
+        </div> 
+
+        <div class="spacequare" [ngClass]="item.edit ? 'active' : 'inative'">
+
+        </div> 
+
+         
+        <div style="width: 76%">
+            <div style="background-color: rgba( 218, 91, 150, 10%); width: 25%; color: rgba( 218, 91, 150, 100%); padding: 6px;">
+                <!-- <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="ads_click"></mat-icon>  -->
+                <span style="transform: translateX(40px);">{{item.nome}}</span>
+
+            </div>
+        </div>  
+
+        <div style="padding: 5px 10px; background-color: #ECEEF5; color: #42569C; font-weight: 550;">
+            {{item.situacao}}
+        </div>  
+
+        <div style="padding-right: 10px;" [ngClass]="item.edit ? 'color-inative' : 'color-active'">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="remove_circle_outline"></mat-icon>
+            <mat-icon (click)="item.edit = !item.edit" aria-hidden="false" aria-label="Example home icon" fontIcon="edit_square_outline"></mat-icon>
+        </div>
+    </div>
+        <div style="padding: 10px; background-color: #F2F3F7" *ngIf="item.edit">
+            <div style="padding: 10px; background-color: #fff; box-shadow: 0 0 1px black;">
+
+            </div>
+        </div>
+    </div>
+  </div>

@@ -1,0 +1,7 @@
+<div style="display: flex; align-items: center;">
+    <!-- <mat-icon style="margin-left: 14px; color: #E7EAF1" aria-hidden="false" aria-label="Example home icon" fontIcon="drag_indicator"></mat-icon> -->
+    <fa-icon style="margin-left: 14px; color: #9da3b3" [icon]="['fal', 'grip-lines']"></fa-icon>
+    <blue-badge-title [icon]="item.icon" [color]="item.color" style="width: 60%;" [title]="item.nome"></blue-badge-title>
+    <blue-badge-status style="width: 30%" disabled="true"></blue-badge-status>
+    <blue-opts (removeFunction)="removeFunction()" (editFunction)="editFunction()" [editShow]="true" [removeShow]="true"></blue-opts>
+</div>

@@ -1,0 +1,35 @@
+<div>
+    <mat-label class="header-modal">
+        <fa-icon class="icon-main" [icon]="['fal', 'pencil']"></fa-icon> Editar setor corporativo
+        <fa-icon class="icon-close" [icon]="['fal', 'xmark']"></fa-icon>
+    </mat-label>
+
+    <div class="content-primary">
+        <mat-form-field class="example-full" appearance="fill">
+            <mat-label>Nome do setor</mat-label>
+            <input matInput placeholder="Marketing" value="Financeiro e Compras">
+        </mat-form-field>
+        <br>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Descrição</mat-label>
+            <textarea matInput placeholder="Descriçao do setor"></textarea>
+        </mat-form-field>
+
+        <mat-slide-toggle [(ngModel)]="status" color="primary">{{status ? 'Ativo' : 'Inativo'}}</mat-slide-toggle>
+    </div>
+
+    <div class="content-secondary">
+        <mat-label class="title">Aparência</mat-label>
+        <div class="icon-selected">
+            <fa-icon [ngStyle]="{'font-size': '16px', 'color': cor}" [icon]="['fal', 'bullseye-arrow']"></fa-icon>
+        </div>
+
+        <blue-color-picker class="color-picker" (changeEvent)="selectColor($event)"></blue-color-picker>
+    </div>
+
+    <div class="footer-buttons">
+        <button class="close-button" mat-button>Cancelar</button>
+        <button mat-flat-button class="save-button">Salvar</button>
+    </div>
+
+</div>

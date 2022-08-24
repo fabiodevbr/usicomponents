@@ -1,0 +1,6 @@
+<div style="padding-right: 10px; color: #7D8499;">
+    <fa-icon *ngIf="editShow" (click)="editar()" style="margin: 0 10px; font-size: 16px;" [icon]="['fal', 'pencil']"></fa-icon>
+    <fa-icon *ngIf="removeShow" (click)="remover()" style="margin: 0 10px; font-size: 16px;" [icon]="['fal', 'trash-xmark']"></fa-icon>
+    <!-- <mat-icon *ngIf="removeShow" aria-hidden="false" aria-label="Example home icon" fontIcon="remove_circle_outline"></mat-icon> -->
+    <!-- <mat-icon *ngIf="editShow" aria-hidden="false" aria-label="Example home icon" fontIcon="edit_square_outline"></mat-icon> -->
+</div>

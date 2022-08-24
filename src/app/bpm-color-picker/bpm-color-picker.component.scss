@@ -1,0 +1,36 @@
+.mat-radio-label .mat-radio-outer-circle {
+    display: none;
+}
+
+.mat-radio-label .mat-radio-container {
+    display: none;
+}
+
+.mat-radio-label .mat-radio-inner-circle {
+    display: none;
+}
+
+.mat-radio-group .mat-radio-button  .color {
+    
+        height: 35px;
+        width: 35px;
+    
+}
+
+
+.mat-radio-group .mat-radio-checked  .color {
+    
+    height: 40px;
+    width: 40px;
+
+}
+
+.divisoria {
+    height: 40px;
+    width: 2px;
+    background-color: #D3D6E0;
+    margin-left: 25px;
+    margin-right: 25px;
+    position: relative;
+    bottom: 2px;
+}

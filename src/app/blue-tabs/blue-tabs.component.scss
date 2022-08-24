@@ -1,0 +1,23 @@
+/** No CSS for this example */
+::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label-active {
+    color:white !important;
+    background-color: #41569C !important;
+    height: 150px;
+    border-radius: 4px;
+    }
+    
+    ::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label {
+        color:#41569C;
+        background-color: white;
+        height: 150px;
+        border-radius: 4px;
+        margin-right: 10px;
+        padding: 10px;
+        }
+
+        ::ng-deep .mat-tab-list .mat-tab-labels .mat-tab-label {
+            align-items: left;
+            text-align: left;
+            justify-content: flex-start;
+            white-space: pre-wrap !important;
+        }
